@@ -1,0 +1,408 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+/* Reset and Global Styles */
+body, h1, h2, h3, p, ul, li, a {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* Navbar Styles */
+header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    transition: background 0.4s ease;
+}
+
+/* Header and Navbar Styles */
+header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    transition: background 0.4s ease;
+}
+header nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 50px;
+}
+
+.nav-items {
+    display: flex;
+    align-items: center;
+}
+
+/* Specific styling for the Certificates menu item */
+#certificates a {
+    color: cyan; /* Change text color to cyan */ 
+}
+
+#certificates a:hover {
+    color: darkcyan; /* Change color on hover for a visual effect */
+}
+
+header nav .nav-items {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+header nav .nav-items li {
+    margin: 0 15px;
+}
+
+header nav .nav-items li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+
+
+header nav .nav-items li a:hover {
+    color: #ADD8E6;
+}
+ 
+header nav .logo {
+    margin: 0 30px;
+}
+
+header nav .logo img {
+    height: 50px;
+    margin-top: 5px;
+}
+
+ 
+header.transparent {
+    background: rgba(255, 255, 255, 0);
+}
+
+ 
+header.scrolled {
+    background: rgba(0, 51, 102, 1);
+}
+
+ 
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.hamburger span {
+    background-color: white;
+    height: 3px;
+    width: 25px;
+    margin: 2px 0;
+    transition: all 0.3s ease;
+}
+
+ 
+.mobile-only {
+    display: none; 
+}
+ 
+@media (max-width: 768px) {
+
+.mobile-only {
+        display: block; 
+    }
+
+    header nav {
+        justify-content: space-between;
+        padding: 20px;
+    }
+
+    header nav .nav-items {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        background: rgba(0, 51, 102, 0.9);
+        padding: 20px 0;
+        z-index: 999;
+    }
+
+    header nav .nav-items.active {
+        display: flex;
+    }
+
+    header nav .nav-items li {
+        margin: 10px 0;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+ 
+    header nav .right-menu {
+        display: none;
+    }
+
+     
+    header nav .left-menu.active,
+    header nav .right-menu.active {
+        display: flex;
+    }
+}
+
+/* Header Image Styles */
+.header-image {
+    padding-top: 100px;
+    position: relative;
+    height: 35vh;
+    background-image: url('landing-bg.jpg'); 
+    background-size: cover;
+    background-position: center; 
+    z-index: 1;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);  
+    z-index: -1;  
+}
+
+
+
+.header-overlay {
+    position: absolute;
+    top: 60%;  
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+}
+.header-overlay h1 {
+    font-size: 48px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+} 
+ 
+@media (max-width: 768px) { 
+
+    .footer-container {
+        flex-direction: column;  
+    }
+
+    .footer-left, .footer-right {
+        justify-content: center;
+    }
+} 
+
+footer {
+    background-color: #0d2a4d;  
+    color: #ffffff;  
+    padding: 40px 20px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    gap: 30px;
+}
+ 
+.footer-left {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    flex: 1;
+    min-width: 300px;
+}
+ 
+.footer-logo {
+    max-width: 70px;
+    height: auto;
+}
+ 
+.footer-about h3 {
+    margin: 0;
+    font-size: 24px;
+}
+
+.footer-about p {
+    margin-top: 10px;
+    font-size: 14px;
+    line-height: 1.5;
+}
+ 
+.footer-right {
+    flex: 1;
+    min-width: 300px;
+}
+
+.footer-nav {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.footer-nav li {
+    text-align: right;
+}
+
+.footer-nav a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+.footer-nav a:hover {
+    color: #0dcaf0;  
+}
+ 
+.footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+    padding-top: 10px;
+    border-top: 1px solid #ffffff30;
+    font-size: 14px;
+}
+
+/* Contact Section Styling */
+.contact-section {
+    display: flex;
+    padding: 50px 20px;
+    background: #f8f9fa;
+    margin: 0 20px; /* Add margin to the left and right of the section */
+    flex-direction: row; /* Default to row layout */
+}
+
+.contact-form {
+    flex: 1;
+    padding: 30px; /* Increased padding for the form */
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    margin-right: 20px;
+}
+
+.contact-form h2 {
+    font-size: 28px; /* Increased font size for better visibility */
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.contact-form input, 
+.contact-form textarea {
+    width: 100%;
+    padding: 15px; /* Increased padding for input fields */
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px; /* Added font size for better readability */
+}
+
+.contact-form button {
+    background: #007BFF;
+    color: #fff;
+    padding: 12px 20px; /* Increased padding for the button */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px; /* Added font size for consistency */
+    transition: background 0.3s ease;
+}
+
+.contact-form button:hover {
+    background: #0056b3;
+}
+
+/* Map Section Styling */
+.map-section {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.socials {
+    margin-bottom: 20px;
+}
+
+.social-icon {
+    font-size: 28px; /* Increased icon size for better visibility */
+    margin: 0 15px; /* Adjusted margin for social icons */
+    color: #007BFF;
+    transition: color 0.3s ease;
+}
+
+.social-icon:hover {
+    color: #0056b3;
+}
+
+.map {
+    width: 100%;
+    max-width: 450px; /* Increased max width for the map */
+    height: 350px; /* Increased height for the map */
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Added shadow to the map */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .contact-section {
+        flex-direction: column; /* Stack the form and map on smaller screens */
+        margin: 0; /* Remove side margins */
+    }
+
+    .contact-form {
+        margin-right: 0; /* Remove right margin */
+        margin-bottom: 20px; /* Add bottom margin for spacing */
+    }
+
+    .contact-form h2 {
+        font-size: 24px; /* Decrease font size for smaller screens */
+    }
+
+    .contact-form input, 
+    .contact-form textarea {
+        font-size: 14px; /* Decrease font size for input fields */
+    }
+
+    .contact-form button {
+        font-size: 14px; /* Decrease button font size */
+    }
+
+    .social-icon {
+        font-size: 24px; /* Decrease icon size for better fit */
+        margin: 0 10px; /* Adjust margin for social icons */
+    }
+
+    .map {
+        max-width: 100%; /* Allow the map to be full width */
+        height: 250px; /* Adjust height for smaller screens */
+    }
+}
+

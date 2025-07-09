@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard</title>
+</head>
+<body>
+  <h1>Upload Images</h1>
+  <form id="uploadForm">
+    <label for="imageUpload">Choose an image to upload:</label>
+    <input type="file" id="imageUpload" name="imageUpload" accept="image/*">
+    
+    <br><br>
+    <label>Select Destination:</label>
+    <br>
+    <input type="radio" id="gallery" name="destination" value="gallery" checked>
+    <label for="gallery">Gallery</label>
+    <br>
+    <input type="radio" id="events" name="destination" value="events">
+    <label for="events">Events</label>
+    
+    <br><br>
+    <button type="submit">Upload</button>
+  </form>
+
+  <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-storage.js"></script>
+  <script type="module" src="dashboard.js"></script>
+</body>
+</html>

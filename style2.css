@@ -1,0 +1,293 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+html{
+    scroll-behavior: smooth;
+ }
+body, h1, h2, h3, p, ul, li, a {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ 
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    
+}
+
+/*upper nav*/
+.navbar-div1 {
+    
+    background-color: rgb(0, 0, 99);
+    padding: 10px;
+    text-align: center;
+    color: white;
+    display: flex;
+    justify-content: center;
+    height: 70px;
+    
+}
+.navbar-div1 img{
+    height: 30px;
+    width: 140px;
+    object-fit: contain;
+    
+}
+/*div3*/
+
+header {
+    
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    transition: background 0.4s ease;
+}
+
+header nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 7px 30px;
+}
+
+.nav-items {
+    display: flex;
+    align-items: center; 
+}
+
+/* Specific styling for the Certificates menu item */
+#certificates a {
+    color: cyan; /* Change text color to cyan */ 
+}
+
+#certificates a:hover {
+    color: darkcyan;  /* Change color on hover for a visual effect */
+}
+
+header nav .nav-items {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+header nav .nav-items li {
+    margin: 0 15px;
+}
+
+header nav .nav-items li a {
+    font-size: 18px;
+    padding: 5px;
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+
+
+header nav .nav-items li a:hover {
+    color: #ADD8E6;
+}
+ 
+header nav .logo {
+    margin: 0 30px;
+}
+
+header nav .logo img {
+    height: 35px;
+    margin-top: 5px;
+}
+
+ 
+header.transparent {
+    background: rgba(255, 255, 255, 0);
+}
+
+ 
+header.scrolled {
+    background: rgb(0, 65, 131);
+}
+
+ 
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.hamburger span {
+    background-color: white;
+    height: 3px;
+    width: 25px;
+    margin: 2px 0;
+    transition: all 0.3s ease;
+}
+
+ 
+.mobile-only {
+    display: none; 
+}
+/* div 2 */
+.top-bar {
+    
+    
+    background-color: transparent; 
+    padding: 5px 20px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 430px;
+    height: 40px;
+}
+
+.top-bar img {
+    width: 120px;
+
+}
+
+
+
+header.scrolled nav {
+    background-color: rgb(0, 65, 131); 
+}
+
+.top-bar.scrolled {
+    background-color: rgb(0, 65, 131); 
+}
+
+.top-bar.scrolled img {
+    filter: brightness(0) invert(1);
+}
+
+.div1 {
+    background-color: #001f3f;  
+    padding: 2px 10px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding-left: 150px;
+}
+
+.div1 ul {
+    display: flex;
+    
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    gap: 10px;
+}
+
+.div1 li a {
+    color: white;
+    font-size: 12px;
+    text-decoration: none;
+    padding: 2px 5px;
+    transition: color 0.3s ease;
+}
+
+.div1 li a:hover {
+    color: #00ffff; 
+}
+.ieee{
+    padding-left: 200px;
+  
+}
+.sb{
+    right: 200px;
+    
+}
+/* for navbar of div 1 and 2 */
+@media (max-width: 768px) {
+    
+    .div1 {
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        padding-left: 10px;
+        height: auto;
+        gap: 5px;
+        padding-left: 60px;
+    }
+
+    .div1 ul {
+        flex-wrap: wrap;
+        gap: 6px;
+    }
+
+    .div1 li a {
+        font-size: 11px;
+        padding: 1px 3px;
+    }
+
+    .top-bar{
+        width: 300px;
+        display: flex;
+        justify-content:center;
+        align-items: center;
+        gap: 60px;
+        padding-left: 40px;
+    }
+    .ieee{
+        
+        padding-left: 0px;
+        
+        
+    }
+
+    
+}
+
+
+
+ 
+@media (max-width: 768px) {
+
+.mobile-only {
+        display: block; 
+    }
+
+    header nav {
+        justify-content: space-between;
+        padding: 20px;
+    }
+
+    header nav .nav-items {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        background: rgba(0, 51, 102, 0.9);
+        padding: 20px 0;
+        z-index: 999;
+    }
+
+    header nav .nav-items.active {
+        display: flex;
+    }
+
+    header nav .nav-items li {
+        margin: 10px 0;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+ 
+    header nav .right-menu {
+        display: none;
+    }
+
+     
+    header nav .left-menu.active,
+    header nav .right-menu.active {
+        display: flex;
+    }
+}

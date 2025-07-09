@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IEEE SB-MCET</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+</head>
+<body> 
+  <header>
+    <!-- first div -->
+        <div class="div1">
+            <ul>
+                <li><a href="https://www.ieee.org/">IEEE.org</a></li><span>|</span>
+                <li><a href="https://ieeexplore.ieee.org/Xplore/home.jsp">IEEE Xplore Digital Library</a></li><span>|</span>
+                <li><a href="https://standards.ieee.org/?_gl=1*1tszgc0*_gcl_au*NjQ0ODgzMDg3LjE3NDk5ODU4ODg.">IEEE Standards</a></li><span>|</span>
+                <li><a href="https://spectrum.ieee.org/?_gl=1*18ls847*_gcl_au*NjQ0ODgzMDg3LjE3NDk5ODU4ODg."> IEEE Spectrum Online</a></li><span>|</span>
+                <li><a href="https://www.ieee.org/sitemap.html"> More IEEE Sites</a></li>
+            </ul>
+        </div>
+    <!-- second div -->
+    <div class="top-bar">
+        <img class="sb" src="SB Logo Black.png" >
+        <img class="ieee" src="ieee mb black png.png">
+    </div>
+
+    <!-- third div -->
+    <nav class="div3">
+        <ul class="nav-items left-menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="members.html">Team</a></li>
+        </ul>
+
+
+        <div class="hamburger" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+        <ul class="nav-items right-menu">
+            <li class="mobile-only"><a href="index.html">Home</a></li>
+            <li class="mobile-only"><a href="about.html">About Us</a></li>
+            <li class="mobile-only"><a href="members.html">Team</a></li>
+            
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="events.html">Events</a></li>
+            <li id="certificates"><a href="https://mcet.ac.in" target="_blank">MCET</a></li>
+        </ul>
+    </nav>
+</header>
+<script src="newjs.js"></script> <!--for nav bar for div 1 and 2-->
+      
+    <section id="home" class="landing">
+        <div class="overlay"></div>
+        <div class="landing-content">
+            <h1>Empowering Innovation and Excellence</h1>
+            <p>Welcome to the IEEE Student Branch of MCET</p>
+        </div>
+    </section>
+    <!-- Add this new section after the landing section -->
+
+ 
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-content-centered"> 
+                <h2>About IEEE SB-MCET</h2>
+                <p>
+                    The IEEE Student Branch at MCET is dedicated to promoting technological innovation and excellence. 
+                    We provide opportunities for students to develop technical skills, leadership, and teamwork. 
+                    Our mission is to engage students in meaningful activities, competitions, and projects to enhance their learning experience.
+                </p>
+            </div> 
+        </div>
+    </section>
+    
+    
+
+</section> 
+<section id="events" class="events">
+    <h2>Our Latest Events</h2>
+    <div class="carousel" aria-live="polite" aria-label="Event Carousel">
+        <div class="carousel-track"></div>
+    </div>
+    <a href="events.html" class="view-more-btn">More Events</a>
+</section>
+
+ 
+<section id="gallery" class="gallery">
+    <h2>Gallery</h2>
+    <div class="carousel" aria-live="polite" aria-label="Gallery Carousel">
+        <div class="carousel-track"></div>
+    </div>
+    <a href="gallery.html" class="view-more-btn">View More</a>
+</section>
+
+
+  <section class="highlight-cards">
+    <div class="cards-container">
+        <!-- Yearbook Card -->
+        <div class="highlight-card">
+            <div class="card-content">
+                <h2>Yearbook 2023-24</h2>
+                <div class="card-image">
+                    <a href="yearbook/IEEE SB YearBook 23-24.pdf" target="_blank">
+                        <img src="yearbook/Cover Page.jpg" alt="Yearbook Cover">
+                        <div class="card-overlay">
+                            <span>Preview Yearbook</span>
+                        </div>
+                    </a>
+                </div>
+                <a href="yearbook/IEEE SB YearBook 23-24.pdf" class="view-more-btn" download>
+                    Download Yearbook <i class="fas fa-download"></i>
+                </a>
+            </div>
+        </div>
+
+        <!-- MCET Update Card -->
+        <div class="highlight-card">
+            <div class="card-content">
+                <h2>MCET Update Vol. 037</h2>
+                <div class="card-image">
+                    <a href="mcetupdate.html">
+                        <img src="mcetupdate/MCET Update - VOL 037.png" alt="MCET Update">
+                        <div class="card-overlay">
+                            <span>View All Volumes</span>
+                        </div>
+                    </a>
+                </div>
+                <a href="mcetupdate.html" class="view-more-btn">
+                    Explore Archives <i class="fas fa-arrow-right"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+  
+
+ 
+  <section id="members" class="members-section">
+    <h2>Meet Our Team</h2>
+    <div class="members-container">
+        <div class="member">
+            <div class="member-image">
+                <img src="members/viju.jpg" alt="John Doe">
+            </div>
+            <div class="member-details">
+                <h3 class="member-name">Vijayalekshmi SV</h3>
+                <p class="member-role">Student Branch Counsellor</p>
+            </div>
+        </div>
+        <div class="member">
+            <div class="member-image">
+                <img src="members/biju.png" alt="John Doe">
+            </div>
+            <div class="member-details">
+                <h3 class="member-name">Biju G R</h3>
+                <p class="member-role">IEEE Advisor</p>
+            </div>
+        </div>
+        <div class="member">
+            <div class="member-image">
+                <img src="members/sameen.jpg" alt="Jane Smith">
+            </div>
+            <div class="member-details">
+                <h3 class="member-name">Sameen Sardar S</h3>
+                <p class="member-role">Chairperson</p>
+            </div>
+        </div>
+        <div class="member">
+            <div class="member-image">
+                <img src="members/prx.jpg" alt="Michael Lee">
+            </div>
+            <div class="member-details">
+                <h3 class="member-name">Prasanth Somakumar Nair</h3>
+                <p class="member-role">Vice - Chair & LINK Rep.</p>
+            </div>
+        </div> 
+        <div class="member">
+            <div class="member-image">
+                <img src="members/varun.jpg" alt="Emma Davis">
+            </div>
+            <div class="member-details">
+                <h3 class="member-name">Varun Vinod</h3>
+                <p class="member-role">Secretary & Editor</p>
+            </div>
+        </div>
+        <div class="member">
+            <div class="member-image">
+                <img src="members/arathy.jpg" alt="Emma Davis">
+            </div>
+            <div class="member-details">
+                <h3 class="member-name">Arathy G</h3>
+                <p class="member-role">Treasurer & WIE Rep.</p>
+            </div>
+        </div>
+    </div>
+    
+    <div class="more-members-btn-container">
+        <a href="members.html" class="view-more-btn">View Full ExeCom</a>   
+    </div>
+    
+</div>
+</section> 
+
+
+    <section id="contact" class="contact-section">
+        <h2>Contact Us</h2>
+        <div class="contact-container">
+            <div class="contact-form">
+                <form>
+                    <input type="text" name="name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="message" placeholder="Your Message" required></textarea>
+                    <button type="submit" class="submit-btn">Send Message</button>
+                </form>
+            </div>
+            <div class="contact-map">
+                <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3928.541272771696!2d76.34488491479511!3d10.054960692817475!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b080c20ab6cbd05%3A0x4f1b1685dfd5a8f5!2sMalabar%20College%20of%20Engineering%20and%20Technology%2C%20Thrissur!5e0!3m2!1sen!2sin!4v1622835940619!5m2!1sen!2sin" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe> -->
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3944.5556155143818!2d77.0036030115335!3d8.638587794940209!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b05c7de92d58b5f%3A0xdbff8055a9f6d8d3!2sMohandas%20College%20of%20Engineering%20and%20Technology!5e0!3m2!1sen!2sin!4v1727748659197!5m2!1sen!2sin" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </div>
+        <div class="social-links">
+            <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+    </section>
+
+  
+  
+    
+ 
+    <footer> 
+        <div class="footer-container">
+            <div class="footer-left">
+                <img src="ieee-logo.png" alt="IEEE Logo" class="footer-logo"> 
+                <div class="footer-about">
+                    <h3>IEEE SBMCET</h3>
+                    <p>Empowering students to innovate and excel in technology. Join us to explore new horizons and stay at the forefront of innovation.</p>
+                </div>
+            </div>
+            <div class="footer-right">
+                <ul class="footer-nav">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="members.html">Members</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="#events">Events</a></li>
+                    <li><a href="#contact">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <a href="developers.html" class="dev">
+            <p>Made in-house by the Developers of IEEE SB-MCET</p></a>
+        </div>
+    </footer>   
+    <script>
+        const hamburger = document.querySelector('.hamburger');
+        const navItems = document.querySelectorAll('.nav-items');
+        const header = document.getElementById('main-header');
+
+        
+
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                header.classList.add('scrolled');
+                header.classList.remove('transparent');
+            } else {
+                header.classList.remove('scrolled');
+                header.classList.add('transparent');
+            }
+        });
+    </script>
+</body>
+</html>
